@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Begin Document                      %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt, letterpaper]{article}
+\usepackage[vmargin=1in, hmargin=1in]{geometry}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Heading                             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent{Kevin Sliker}
+
+\noindent{\today}
+
+\noindent{Part 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%             Title of paper                       %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\textbf{Amortized Cost Exercise}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.2in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%          Main content of paper                   %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent{\textbf{1.}} Performing 16 push operations on an array of capacity 8, when doubling array capacity, would be a total cost of 8 + 9 + 7 = 24. That's 8 operations at cost 1, 1 operation at cost 9, and 7 operations at cost 1.
+
+Performing 32 push operations on an array of capacity 8, when doubling array capacity, would be a total cost of 8 + 9 + 7 + 16 + 16 = 56. That's 8 operations at cost 1, 1 operation at cost 9, 6 operations at cost 1, 1 operation of cost 16, and 16 operations of cost 1.
+
+The big-oh complexity for this push operation as N gets very large is O(1+).
+
+\vspace{0.5in}
+\noindent{\textbf{2.}} Performing 16 push operations on an array of capacity 8, when adding 2 memory blocks, would be a total cost of 60. 
+
+Performing 32 push operations on an array of capacity 8, when adding 2 memory blocks, would be a total of 260.
+
+The big-oh complexity for this push operation as N gets very large is O(n).
+
+\vspace{0.5in}
+\noindent{\textbf{3.}} Instead of shrinking the array by one half every time you get below that point, perhaps only shrinking by a quarter would suffice. For instance, imagine you have an array of 100 elements. Say you have popped your way down to only 50 elements. Rather than free the empty 50 elements your not using, just free 25 of them. This way, you avoid having to realocate memory so quickly if you were to perform a push operation at the 50 mark.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%            end of document                        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
