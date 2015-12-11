@@ -1,0 +1,7 @@
+1. Eat and tea would hash the same value using stringHash1().
+2. stringHash2() is superior because it uses a shift to calculate a word. So a word built of the same letter, but in different order, would not hash to the same value. 
+3. No the size should not change because each word gets a hashlink. The size would only change if the word set changed.
+4. No the table load should not change for the same reason as above.
+5. Yes because each hash distributes keys differently.
+6. Yes the prime number is more efficient because we use the modulo. Prime numbers reduce collisions by reducing common factors of the modulo.
+7. If you increase size, performance is increased. If you decrease size, performance is decreased. Increasing the size would mean that searching the buckets would be closer to constant time rather than linear time. 
