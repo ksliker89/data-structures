@@ -1,0 +1,12 @@
+main2.c:  very similar to the compareTo method in java or the strcmp function in c. it
+main2.c:  right are void pointers. To compare left and right, you should first cast
+main2.c:  compare the values pointed by the casted pointers.
+main2.c:  DO NOT compare the addresses pointed by left and right, i.e. "if (left < right)",
+main2.c:int compare(TYPE left, TYPE right)
+main2.c:	sortHeap(mainList, compare);
+toDoList.c:  very similar to the compareTo method in java or the strcmp function in c. it
+toDoList.c:  right are void pointers. To compare left and right, you should first cast
+toDoList.c:  compare the values pointed by the casted pointers.
+toDoList.c:  DO NOT compare the addresses pointed by left and right, i.e. "if (left < right)",
+toDoList.c:int compare(TYPE left, TYPE right)
+toDoList.c:		addHeap(heap, task, compare);
